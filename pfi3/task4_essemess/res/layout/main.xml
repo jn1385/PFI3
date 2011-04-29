@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:background="#776688" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+  
+   
+    
+    <TextView android:text="" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="20dip"></TextView>
+   
+    <TextView android:text="input tag" 
+    android:id="@+id/textView1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textColor="#ffff" 
+    android:textSize="20dip" 
+    android:layout_marginLeft="5dip"
+    android:layout_marginBottom="5dip"
+    
+    ></TextView>
+    
+    <EditText android:text="" 
+    android:layout_width="match_parent" 
+    android:layout_height="40dip" 
+    android:maxLength="32"
+    android:id="@+id/editText1"
+    android:background= "#ffff"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    
+    ></EditText>
+    
+    <TextView android:text="input text" 
+    android:id="@+id/textView2" 
+    android:layout_width="wrap_content" 
+    android:layout_height="25dip"
+    android:textColor="#ffff" 
+    android:textSize="20dip"
+    android:layout_margin="5dip"
+    ></TextView>
+          
+   
+    <EditText android:text=""
+     android:layout_width="match_parent" 
+     android:layout_height="180dip" 
+     android:maxLength="256"
+     android:id="@+id/editText2"
+     android:background ="#ffff" 
+     android:layout_marginLeft="10dip"
+     android:layout_marginRight="10dip"
+     
+     android:gravity="top"></EditText>
+    
+    
+    <TextView android:text="" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    
+     
+     
+    
+    <Button android:text="submit" 
+    android:id="@+id/button1" 
+    android:layout_width="match_parent" 
+    android:layout_height="40dip" 
+    android:bufferType="normal" 
+    android:fadingEdge="horizontal" 
+    android:fadingEdgeLength="40dip" 
+    android:textColor="#ffff" 
+    android:textSize="25dip"
+    android:background="#776688"
+    android:textStyle="bold" 
+    android:layout_margin="10dip"
+    ></Button>
+    
+
+    
+</LinearLayout>
+
+

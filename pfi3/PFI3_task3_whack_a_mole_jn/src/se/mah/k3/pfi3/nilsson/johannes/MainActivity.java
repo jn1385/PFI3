@@ -87,7 +87,7 @@ public class MainActivity extends Activity implements Callback {
 	private void endGame()
 	{
 		running = false;
-		alertbox.setMessage("Time up! You wacked " + gameView.getScore() + " moles!");
+		alertbox.setMessage("Times up! You hit " + gameView.getScore() + " flies!");
 		alertbox.show();
 	}
 
