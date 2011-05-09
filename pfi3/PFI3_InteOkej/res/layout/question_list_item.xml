@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definig a container for you List Item-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffffff"
+	android:paddingLeft="30dip">
+	
+	
+	
+	<TextView
+		android:id="@+id/list_content"
+		android:textColor="#000000"
+		android:text="lorem ipsum lorem ipsum ad et cae lorem ipsum mumsi pumsi"
+		android:layout_margin="4dip"
+		android:layout_width="150dip"
+		android:layout_height="wrap_content"
+/>
+
+<Button 
+	android:text="@+id/Button01" 
+	android:id="@+id/Button01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+</LinearLayout>

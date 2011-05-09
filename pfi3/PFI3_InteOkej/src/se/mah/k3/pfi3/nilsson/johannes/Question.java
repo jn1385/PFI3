@@ -20,6 +20,8 @@ public class Question {
 		this.content = content;
 		this.userName = userName;
 		this.tag = tag;
+		
+		answers = new ArrayList<Answer>();
 	}
 	
 	
@@ -47,6 +49,16 @@ public class Question {
 	public ArrayList<Answer> getAnswers()
 	{
 		return answers;
+	}
+	
+	public void support()
+	{
+		supporters ++;
+	}
+	
+	public String toString()
+	{
+		return title;
 	}
 
 }

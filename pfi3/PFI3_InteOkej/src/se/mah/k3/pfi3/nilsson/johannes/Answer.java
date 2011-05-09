@@ -24,4 +24,9 @@ public class Answer {
 	{
 		return userName;
 	}
+	
+	public void like()
+	{
+		likes ++;
+	}
 }
