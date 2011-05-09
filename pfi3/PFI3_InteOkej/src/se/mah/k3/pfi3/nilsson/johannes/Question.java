@@ -46,6 +46,11 @@ public class Question {
 		return tag;
 	}
 	
+	public int getNumSupporters()
+	{
+		return supporters;
+	}
+	
 	public ArrayList<Answer> getAnswers()
 	{
 		return answers;

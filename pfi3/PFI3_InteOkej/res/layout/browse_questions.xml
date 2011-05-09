@@ -3,7 +3,18 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#ff999999"
     >
+    <TextView
+    	android:background="#ffdddddd"
+    	android:gravity="center_horizontal"
+    	android:text="Här kommer det att finnas tabbar"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="30dip"
+    	>
+    </TextView>
 	<ListView
 		android:id="@+id/questionlist"
         android:layout_width="fill_parent"

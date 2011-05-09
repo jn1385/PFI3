@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Definig a container for you List Item-->
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:gravity="center_vertical"
@@ -19,10 +18,9 @@
 		android:layout_height="wrap_content"
 />
 
-<Button 
-	android:text="@+id/Button01" 
-	android:id="@+id/Button01" 
-	android:layout_width="wrap_content" 
-	android:layout_height="wrap_content">
-	</Button>
+	<se.mah.k3.pfi3.nilsson.johannes.QuestionStatsView
+		android:id="@+id/statsview"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</se.mah.k3.pfi3.nilsson.johannes.QuestionStatsView>
 </LinearLayout>

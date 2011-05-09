@@ -22,6 +22,8 @@ public class FakeDatabase {
 		q.support();
 		q.support();
 		q.support();
+		q.support();
+		q.support();
 		
 		q.getAnswers().add(new Answer("stackars dig!", "crazy_girl_95"));
 		q.getAnswers().add(new Answer("det ordnar sig ska du se!", "TonySoprano"));
@@ -31,6 +33,16 @@ public class FakeDatabase {
 		q.getAnswers().add(a);
 		
 		questions.add(q);
+		
+		Question q2 = new Question("Jag har inga venner på lunar :( och alla är jättedumma mot mig på msn och skype och farmville", "", "nogger_black", "sex");
+		q2.support();
+		
+		q2.getAnswers().add(new Answer("", ""));
+		questions.add(q2);
+		questions.add(new Question("bla1", "", "", ""));
+		questions.add(new Question("bla2", "", "", ""));
+		questions.add(new Question("bla bla bla bla", "", "", ""));
+		questions.add(new Question("bla bla lorem ipsum", "", "", ""));
 	}
 	
 	/**
