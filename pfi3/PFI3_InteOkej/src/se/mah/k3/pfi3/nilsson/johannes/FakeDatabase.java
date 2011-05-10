@@ -34,12 +34,12 @@ public class FakeDatabase {
 		
 		questions.add(q);
 		
-		Question q2 = new Question("Jag har inga venner på lunar :( och alla är jättedumma mot mig på msn och skype och farmville", "", "nogger_black", "sex");
+		Question q2 = new Question("Jag har inga venner på lunar :( ", "", "nogger_black", "sex");
 		q2.support();
 		
 		q2.getAnswers().add(new Answer("", ""));
 		questions.add(q2);
-		questions.add(new Question("bla1", "", "", ""));
+		questions.add(new Question("bla1 bla lorem ipsum shipsum lalala hej", "", "", ""));
 		questions.add(new Question("bla2", "", "", ""));
 		questions.add(new Question("bla bla bla bla", "", "", ""));
 		questions.add(new Question("bla bla lorem ipsum", "", "", ""));
@@ -52,6 +52,17 @@ public class FakeDatabase {
 	public static ArrayList<Question> getAllQuestions()
 	{
 		return questions;
+	}
+	
+	public static ArrayList<Question> getUnansweredQuestions()
+	{
+		ArrayList<Question> unansweredQuestions = new ArrayList<Question>();
+		for(int i = 0; i < questions.size(); i ++){
+			if(questions.get(i).getAnswers().size() == 0){
+				unansweredQuestions.add(questions.get(i));
+			}
+		}
+		return unansweredQuestions;
 	}
 	
 	/**

@@ -30,12 +30,17 @@ public class MyAdapter extends ArrayAdapter<Question> {
 		View row = inflater.inflate(R.layout.question_list_item, parent, false);
 		TextView label = (TextView)row.findViewById(R.id.list_content);
 		
-		Question q = (Question) items.get(position);
+		Question question = (Question) items.get(position);
 		
-		label.setText(q.getTitle());
+		label.setText(question.getTitle());
+		/*
 		QuestionStatsView qsw = (QuestionStatsView) row.findViewById(R.id.statsview);
 		qsw.setValues(q.getAnswers().size(), q.getNumSupporters());
-		
+		*/
+		TextView numReplies = (TextView) row.findViewById(R.id.num_replies);
+		numReplies.setText(Integer.toString(question.getAnswers().size()));
+		TextView numSupporters = (TextView) row.findViewById(R.id.num_supports);
+		numSupporters.setText(Integer.toString(question.getNumSupporters()));
 		return row;
 	}
 
