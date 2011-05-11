@@ -14,6 +14,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".BrowseQuestions"></activity>
+        <activity android:name=".PostQuestion"></activity>
 
     </application>
 </manifest>

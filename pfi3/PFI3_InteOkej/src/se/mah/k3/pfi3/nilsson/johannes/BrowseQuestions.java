@@ -31,7 +31,7 @@ public class BrowseQuestions extends Activity implements OnItemClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.browse_questions);
 		
-		FakeDatabase.create();
+		//FakeDatabase.create();
 		questions = FakeDatabase.getUnansweredQuestions();
 		
 		listView = (ListView) findViewById(R.id.questionlist);

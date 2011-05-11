@@ -15,6 +15,7 @@
         android:textSize="30dip"
     	>
     </TextView>
+    
 	<ListView
 		android:id="@+id/questionlist"
         android:layout_width="fill_parent"
@@ -22,5 +23,6 @@
 	>
 		
 	</ListView>
-
+	
+	
 </LinearLayout>

@@ -11,7 +11,9 @@ public class InteOkej extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        Intent intent = new Intent(this, BrowseQuestions.class);
+        FakeDatabase.create();
+        
+        Intent intent = new Intent(this, PostQuestion.class);
         startActivity(intent);
     }
 }
