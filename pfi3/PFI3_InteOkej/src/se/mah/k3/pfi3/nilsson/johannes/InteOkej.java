@@ -13,7 +13,7 @@ public class InteOkej extends Activity {
         
         FakeDatabase.create();
         
-        Intent intent = new Intent(this, PostQuestion.class);
+        Intent intent = new Intent(this, BrowseQuestions.class);
         startActivity(intent);
     }
 }

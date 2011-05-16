@@ -3,11 +3,14 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	
 	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:background="#ffffffff"
-	android:paddingLeft="30dip"
+	android:layout_height="wrap_content"
+	android:background="#00ffffff"
+	android:paddingLeft="10dip"
 	android:paddingTop="10dip"
+	android:paddingBottom="10dip"
 	android:orientation="horizontal"
+	android:gravity="center"
+	
 	>
 	
 	
@@ -20,29 +23,67 @@
 		android:layout_width="150dip"
 		android:layout_height="wrap_content"
 		android:textSize="18dip"
+		android:layout_weight="1"
 />
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="horizontal"
-	android:layout_width="fill_parent"
+	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
 	android:gravity="center"
+	android:layout_weight="1"
 	>
 	
+	<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:orientation="vertical" 
+	android:gravity="center">
+	
+	<LinearLayout 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:background="@drawable/blueball" 
+	android:orientation="vertical" 
+	android:gravity="center">
+	
+	<TextView 
+	android:layout_width="wrap_content" 
+	android:text="6" 
+	android:layout_height="wrap_content" 
+	android:layout_margin="4dip" 
+	android:textSize="22dip" 
+	android:textColor="#ffffff" 
+	android:id="@+id/num_supports">
+	</TextView>
+</LinearLayout>
+
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:text="Stöd" 
+		android:layout_height="wrap_content" 
+		android:layout_margin="4dip" 
+		android:id="@+id/TextView02" 
+		android:textSize="11dip" 
+		android:textColor="#000000">
+</TextView>
+</LinearLayout>
+
 	<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
 	android:layout_width="50dip"
-	android:layout_height="60dip"
-	android:gravity="center"
-	>
+	android:layout_height="wrap_content"
+	android:gravity="center" 
+	android:paddingLeft="8dip">
+	
 		<LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:orientation="vertical"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:gravity="center"
-		android:background="@drawable/blueball"
+		android:background="@drawable/greenball"
 		>
 	
 			<TextView
@@ -56,7 +97,6 @@
 			/>
 		</LinearLayout>
 	<TextView
-		android:id="@+id/replies_label"
 		android:textColor="#000000"
 		android:text="Svar"
 		android:layout_margin="4dip"
@@ -71,7 +111,6 @@
 	android:orientation="vertical"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:background="#ffffffff"
 	android:gravity="center"
 	>
 		<LinearLayout
@@ -83,7 +122,7 @@
 		android:background="@drawable/orangeball"
 		>
 			<TextView
-			android:id="@+id/num_supports"
+			android:id="@+id/num_views"
 			android:textColor="#ffffff"
 			android:layout_margin="4dip"
 			android:layout_width="wrap_content"
@@ -93,15 +132,16 @@
 			/>
 		</LinearLayout>
 	<TextView
-		android:id="@+id/supports_label"
 		android:textColor="#000000"
-		android:text="Stöd"
+		android:text="Visningar"
 		android:layout_margin="4dip"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textSize="11dip"
 	/>
-	
 	</LinearLayout>
+	
+	
+
 </LinearLayout>
 </LinearLayout>

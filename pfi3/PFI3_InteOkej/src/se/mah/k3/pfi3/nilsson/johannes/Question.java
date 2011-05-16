@@ -9,8 +9,10 @@ public class Question {
 	private String content;
 	private String userName;
 	private String tag;
-	private int supporters;
+	private ArrayList<String> usersWhoSupportThis;
+	private ArrayList<String> usersWhoFlaggedThis;
 	private Date date;
+	private int numViews;
 	
 	private ArrayList<Answer> answers;
 	
@@ -21,7 +23,10 @@ public class Question {
 		this.userName = userName;
 		this.tag = tag;
 		
+		date = new Date();
 		answers = new ArrayList<Answer>();
+		usersWhoSupportThis = new ArrayList<String>();
+		usersWhoFlaggedThis = new ArrayList<String>();
 	}
 	
 	
@@ -46,9 +51,9 @@ public class Question {
 		return tag;
 	}
 	
-	public int getNumSupporters()
+	public ArrayList<String> getSupporters()
 	{
-		return supporters;
+		return usersWhoSupportThis;
 	}
 	
 	public ArrayList<Answer> getAnswers()
@@ -56,14 +61,44 @@ public class Question {
 		return answers;
 	}
 	
-	public void support()
+	public void support(String userName)
 	{
-		supporters ++;
+		usersWhoSupportThis.add(userName);
+	}
+	
+	public void flag(String userName)
+	{
+		usersWhoFlaggedThis.add(userName);
+	}
+	
+	public ArrayList<String> getUsersWhoSupportsThis()
+	{
+		return usersWhoSupportThis;
+	}
+	
+	public ArrayList<String> getUsersWhoFlaggedThis()
+	{
+		return usersWhoFlaggedThis;
 	}
 	
 	public String toString()
 	{
 		return title;
+	}
+	
+	public Date getDate()
+	{
+		return date;
+	}
+	
+	public void view()
+	{
+		numViews ++;
+	}
+	
+	public int getNumViews()
+	{
+		return numViews;
 	}
 
 }
